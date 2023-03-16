@@ -3,7 +3,7 @@ const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 var cors = require('cors')
-app.use(cors())
+server.use(cors())
 
 server.use(middlewares)
 server.use(router)
